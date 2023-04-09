@@ -1,10 +1,12 @@
 interface Persona {
     nombreCompleto: string;
     edad: number;
-    direccion: {
-        pais: string;
-        casaNro: number;
-    }
+    direccion: Direccion;
+}
+
+interface Direccion {
+    pais: string;
+    casaNro: number;
 }
 
 export const ObjetosLiterales = () => {
